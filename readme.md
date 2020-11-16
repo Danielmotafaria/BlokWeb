@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -Daniel Mota Faria-
+**Auteur:** -jouw naam-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -62,23 +62,25 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+<img src="images/breakdownschets1.png" width="375px" alt="omschrijving van de pagina">
+ -----zoom in ------
 
+<img src="images/breakdownschets2.png" width="375px" alt="omschrijving van de pagina">
 
 
 ## Intake (week 1)
--Dit is dus de opdracht die ik moet maken voor de eerste les-
+-uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -blauw-
+**Je startniveau:** Blauw
 
-**Je focus:** -Responsive-
+**Je focus:** Responsive
 
-**Je opdracht:** -https://unsplash.com/ -
+**Je opdracht:** https://unsplash.com/ 
 
 **Screenshot(s) van de eerste pagina (small screen):**
+<img src="images/Eerste pagina.png" width="375px" alt="omschrijving van de pagina">
 
-<img src="Screenshot-unsplash1.png" width="375px" alt="omschrijving van de pagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="Screenshot-unsplash2.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/tweede pagina.png" width="375px" alt="omschrijving van de pagina">
