@@ -38,7 +38,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Ik ben niet ver gekomen, vakken stapelen enorm op op dit moment. Het begin ging troebel doordat ik teveel naar de HTML van de website zelf keek, maar nu ben ik het meer aan het namaken op basis van visuals. 
 
 **Screenshot(s):**
 
@@ -46,13 +46,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+|    Jelle    &nbsp;    | Judith        &nbsp;     | Faye       &nbsp;  | Daniel   &nbsp;        |</br>
+| Navigatie      | Navigatie (hamburger)            | Aanpassingen aan website zelf         | Positionering            |</br>
+| gebruik sections of articles, en of deze in elkaar kunnen  | gebruik sections   | grid   | kleur geven aan SVG | </br>
+| juist gebruik van CMS | Juist verstoppen van H1 |   y-scaling   | Flexbox          |
 
 ### Verslag van meeting
 
