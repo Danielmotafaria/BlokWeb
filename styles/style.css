@@ -17,7 +17,7 @@ header{   /*dit is me container/parent */
   Height:56px;
   
   background: white;
-  padding:8px 12px;
+  padding:0 12px;
   
   overflow:hidden;
   
