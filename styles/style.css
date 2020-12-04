@@ -14,20 +14,19 @@
 
 header{   /*dit is me container/parent */
   z-index: 10;
-  position: absolute;
-  top:0; right:0; left:0;
   align-items:center;
+  margin:0;
   
-  Height:56px;
+
   max-width:100%;
   
     display:grid;
     grid-template-columns:min-content 1fr min-content;
-    column-gap:16px;
-    grid-template-rows: repeat(auto-fit, minmax(56px, 56px));
+    column-gap:1em;
+    
   
   background: white;
-  padding:8px 12px;
+  padding:0.5em 0.8em;
   
   overflow:hidden;
   
@@ -36,13 +35,13 @@ header{   /*dit is me container/parent */
 }
 #zoekbalk {  /*Dit is de css voor de zoekbalk*/
 
-    height: 40px;
-    border-radius: 24px;
+    height: 2.5em;
+    border-radius: 1.6em;
     background-color: #eee;
     border: 1px solid transparent;
-    
+    margin:0;
     flex:1;
-  
+   
 }
 
 
@@ -57,17 +56,18 @@ button:first-of-type{ /*dit is niet alleen de icon */
     
 }
 #search{
-  padding: 0 2px 0 0;
   background-color:transparent;
  border:solid 1px transparent;
   width:100%;
   height: 100%;  
-  padding: 1px 2px 2px 7px;
+  padding: 1px 2px 4px 7px;
+
+  font-size: 13.8px;
   
 }
 
 #search-icon{
-    margin:3px 0 0 3px;
+    margin: .1875em 0 0 .1875em;
     fill: #767676;
      
      height:60%;
@@ -88,23 +88,27 @@ button:first-of-type{ /*dit is niet alleen de icon */
    
 }
  
-#themas{                          /*dit is de <ul>*/
+#themas{                          /*dit is de bovenste <ul>*/
    list-style-type: none;
    background-color:white;
-   height:56px;
-  
-   position:absolute; 
-   top:40px;
-   left:-45px;
-   right:0;
-   overflow:scroll;
+   height:3.7333333333333334em;
+   
+   margin:0;
+   padding:0;
+
+   font-size: 0.9333333333333333em;
+
+   overflow-x:scroll;
    
    display:flex;
    align-items:center;
 }
+#themas::-webkit-scrollbar {
+  display: none;
+}
 
 li{
-   padding-left:24px;
+   padding-left:1.6em;
     height:100%;
     width:500px;
     
@@ -118,18 +122,90 @@ li{
   
 }
 
+li:first-of-type{
+  padding-left:.8em;
+}
 li:last-of-type{
-  padding-right:12px;
+  padding-right:.8em;
 }
 
 li.beingused{
   
   
-  
 }
+
+section{
+    margin:0;
+    
+    width:100%;               /*size of the section*/
+
+    
+    background-image: url('images/photo1.jpg'); /*background fuckwith*/
+    background-size:cover;
+    background-position: center;
+
+    margin-bottom:3.2em;
+
+  
+  
+    
+ }
+
+article{
+   display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+
+    padding:2.1333333333333333em .8em;
+    margin:0;
+
+}
+
+h1{
+    color:white;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin:0;
+ 
+    
+
+ }
+h2{
+  color:white;
+  margin:0;
+  line-height: 1.6;
+
+
+
+
+ }
+
+#squarespace{
+     font-family: "object-fit:contain";
+    
+    width:10em; height:1.6em;    
+    object-fit: contain;
+    opacity: .8;
+   
+    margin-left:.8em;
+    margin-top:-1em;
+  
+    
+}
+ #cywt{
+  color:white;   opacity: .8;
+
+ 
+  padding:10px 20px 20px 12px;
+  margin:0;
+ 
+  font-size:.8em;
+
+ }
 
 body{
 background:grey;
-
+margin:0;
 
  }
