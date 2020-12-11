@@ -1,210 +1,265 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
-  font-family: apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
-   font-size: 15px;
-    font-weight: 400;
-  
-  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 }
-  head{
-    
-  }
 
-
-header{   /*dit is me container/parent */
-  z-index: 10;
-  align-items:center;
-  margin:0;
-  
-
-  max-width:100%;
-  
-    display:grid;
-    grid-template-columns:min-content 1fr min-content;
-    column-gap:1em;
-    
-  
+body {
   background: white;
-  padding:0.5em 0.8em;
-  
-  overflow:hidden;
-  
+  margin: 0;
+}
+
+header {
+  /*dit is me container/parent */
+  z-index: 10;
+  align-items: center;
+  margin: 0;
+  padding: 0.5em 0.8em;
+
+  max-width: 100%;
+
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  column-gap: 1em;
+  grid-column-start: auto;
+
+  background: white;
+  overflow: hidden;
   border-bottom: solid 1px rgba(229, 229, 229);
-  
-}
-#zoekbalk {  /*Dit is de css voor de zoekbalk*/
-
-    height: 2.5em;
-    border-radius: 1.6em;
-    background-color: #eee;
-    border: 1px solid transparent;
-    margin:0;
-    flex:1;
-   
 }
 
 
-button:first-of-type{ /*dit is niet alleen de icon */
- 
+
+#zoekbalk {
+  /*Dit is de css voor de zoekbalk*/
+
+  height: 2.5em;
+  border-radius: 1.6em;
+  background-color: #eee;
+  border: 1px solid transparent;
+  margin: 0;
+  flex: 1;
+}
+
+
+button:first-of-type {
+  /*dit is niet alleen de icon */
+
   height: 40px;
-   display:flex;
-    
-    width: 100%;
-    background-color: transparent;
-    border: 1px solid transparent;
-    
+  display: flex;
+
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid transparent;
 }
-#search{
-  background-color:transparent;
- border:solid 1px transparent;
-  width:100%;
-  height: 100%;  
+
+#search {
+  background-color: transparent;
+  border: solid 1px transparent;
+  width: 100%;
+  height: 100%;
   padding: 1px 2px 4px 7px;
 
   font-size: 13.8px;
-  
 }
 
-#search-icon{
-    margin: .1875em 0 0 .1875em;
-    fill: #767676;
-     
-     height:60%;
-     padding-top:6px;
-  
-  
+#search-icon {
+  margin: .1875em 0 0 .1875em;
+  fill: #767676;
+
+  height: 60%;
+  padding-top: 6px;
 }
-
-
-#homebutton{
-  
-}
-
 
 #hamburger {
-  
-   fill:#767676;
-   
-}
- 
-#themas{                          /*dit is de bovenste <ul>*/
-   list-style-type: none;
-   background-color:white;
-   height:3.7333333333333334em;
-   
-   margin:0;
-   padding:0;
 
-   font-size: 0.9333333333333333em;
-
-   overflow-x:scroll;
-   
-   display:flex;
-   align-items:center;
+  fill: #767676;
 }
+
+#themas {
+  /*dit is de bovenste <ul>*/
+  list-style-type: none;
+  background-color: white;
+  height: 3.7333333333333334em;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.9333333333333333em;
+
+  overflow-x: scroll;
+
+  display: flex;
+  align-items: center;
+}
+
 #themas::-webkit-scrollbar {
   display: none;
 }
 
-li{
-   padding-left:1.6em;
-    height:100%;
-    width:500px;
-    
-  
-    display:flex;
-    align-items:center;
-  
-  
-   color:#767676;
-
-  
+a {
+  /*om de blauwe kleur en onderstreep te verwijderen*/
+  color: #767676;
+  text-decoration: none;
 }
 
-li:first-of-type{
-  padding-left:.8em;
-}
-li:last-of-type{
-  padding-right:.8em;
-}
+li {
+  /*items in de menubalk*/
+  padding-left: 1.6em;
+  height: 100%;
+  width: 500px;
 
-li.beingused{
-  
-  
-}
+  display: flex;
+  align-items: center;
 
-section{
-    margin:0;
-    
-    width:100%;               /*size of the section*/
-
-    
-    background-image: url('../images/photo1.jpg'); /*background fuckwith*/
-    background-size:cover;
-    background-position: center;
-
-    margin-bottom:3.2em;
-
-   
-  
-    
- }
-
-article{
-   display:flex;
-    justify-content:flex-start;
-    align-items:flex-start;
-    flex-direction: column;
-
-    padding:2.1333333333333333em .8em;
-    margin:0;
-
+  color: #767676;
 }
 
-h1{
-    color:white;
-    font-size: 1.6em;
-    font-weight: 700;
-    margin:0;
- 
-    
+li:first-of-type {
+  padding-left: .8em;
+}
 
- }
-h2{
-  color:white;
-  margin:0;
+li:last-of-type {
+  padding-right: .8em;
+}
+
+#Intro {
+  margin: 0;
+
+  width: 100%;
+  /*size of the section*/
+
+
+  background-image: url('../images/photo1.jpg');
+  /*background fuckwith*/
+  background-size: cover;
+  background-position: center;
+
+  margin-bottom: 3.2em;
+}
+
+article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  padding: 2.1333333333333333em .8em;
+  margin: 0;
+}
+
+#Unsplashtitel {
+  color: white;
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom:.2em;
+}
+
+
+
+h2 {
+  color: white;
+  margin: 0;
   line-height: 1.6;
-
-
-
-
- }
-
-#squarespace{
-     font-family: "object-fit:contain";
-    
-    width:10em; height:1.6em;    
-    object-fit: contain;
-    opacity: .8;
-   
-    margin-left:.8em;
-    margin-top:-1em;
-  
-    
 }
- #cywt{
-  color:white;   opacity: .8;
 
- 
-  padding:10px 20px 20px 12px;
+#Squarespace-article {
+  padding: 1.333333em 1.333333em 1.333333em .8em;
+}
+
+#squarespace {
+  font-family: "object-fit:contain";
+
+  max-width: 150px;
+  height: 1.20em;
+  object-fit: contain;
+  opacity: .8;
+  margin-top: -1em;
+  transform: translateY(-40%);
+}
+
+#cywt {
+  color: white;
+  opacity: .8;
+  margin: 0;
+
+  font-size: .8em;
+}
+
+section {
+  background-color: white;
+  color: black;
+}
+
+div { /*post - template*/
+  display: flex;
+  margin: .8em;
+  margin-top: 0;
+  flex-flow: column wrap;
+  width: 11.6025em;
+  height: 2.293333333em;
+  text-align: justify;
+}
+
+#profilepic { /*profile pic*/
+  border-radius: 100px;
+  border: solid 1px rgba(118, 118, 118, .20);
+  width: 32px;
+  height: 32px;
+
+  margin-right: .5em;
+}
+
+section:nth-of-type(3) h3 { /*eerste post naam*/
+  margin: 0;
+  padding: 0;
+  height: .8em;
+  width: fit-content;
+}
+
+section:nth-of-type(3) a { /*eerste post description*/
+  margin: 0;
+  font-size: 11px;
+  line-height: 1em;
+  width: 100%;
+}
+
+#post { /*de foto die geplaatst wordt*/   
+  width:100%;
+}
+
+#onderpost{ /*dit is de hele balk onder de post*/
+  margin: .75em .8em 0 .8em;
+  display:flex;
+  flex-grow: 1;
+}
+
+#likeplus{
   margin:0;
- 
-  font-size:.8em;
+  width:5.933333333333334em;
+}
 
- }
+#likeplus svg{
+  fill: #767676;
+  width:1em;
+}
 
- .visually-hidden {
+#likeplus button{
+  width:2.6em; height:2.1333333333333333em;
+  padding:0 0.7333333333333333em;
+  margin:0;
+  border:solid 1px #d1d1d1;
+  border-radius:.3em;
+  background-color:white;
+}
+
+.visually-hidden {
+  /* https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/ */
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -213,9 +268,3 @@ h2{
   white-space: nowrap;
   width: 1px;
 }
-
-body{
-background:grey;
-margin:0;
-
- }
