@@ -129,7 +129,7 @@ li:last-of-type {
 
 #Intro {
   margin: 0;
-
+  margin-bottom: 3.2em;
   width: 100%;
   /*size of the section*/
 
@@ -138,13 +138,10 @@ li:last-of-type {
   /*background fuckwith*/
   background-size: cover;
   background-position: center;
-
-  margin-bottom: 3.2em;
 }
 
 article {
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 
@@ -157,10 +154,8 @@ article {
   font-size: 1.6em;
   font-weight: 700;
   margin: 0;
-  margin-bottom:.2em;
+  margin-bottom: .2em;
 }
-
-
 
 h2 {
   color: white;
@@ -196,17 +191,24 @@ section {
   color: black;
 }
 
-div { /*post - template*/
+#Posttemplate{
+  padding-bottom:2.5833333333333335em;
+   
+}
+#abovepost {
+  /*poster - template*/
   display: flex;
   margin: .8em;
   margin-top: 0;
   flex-flow: column wrap;
-  width: 11.6025em;
+  justify-content: center;
+  width: fit-content;
   height: 2.293333333em;
   text-align: justify;
 }
 
-#profilepic { /*profile pic*/
+#profilepic {
+  /*profile pic*/
   border-radius: 100px;
   border: solid 1px rgba(118, 118, 118, .20);
   width: 32px;
@@ -215,47 +217,98 @@ div { /*post - template*/
   margin-right: .5em;
 }
 
-section:nth-of-type(3) h3 { /*eerste post naam*/
+#abovepost h3 {
+  /* post naam*/
   margin: 0;
   padding: 0;
   height: .8em;
   width: fit-content;
 }
 
-section:nth-of-type(3) a { /*eerste post description*/
+section:nth-of-type(3) a {
+  /*post description*/
   margin: 0;
   font-size: 11px;
   line-height: 1em;
   width: 100%;
 }
 
-#post { /*de foto die geplaatst wordt*/   
-  width:100%;
+#post {
+  /*de foto die geplaatst wordt*/
+  width: 100%;
 }
 
-#onderpost{ /*dit is de hele balk onder de post*/
-  margin: .75em .8em 0 .8em;
-  display:flex;
-  flex-grow: 1;
+#onderpost {
+  /*dit is de hele balk onder de post*/
+  margin: .75em .8em;
+  display: flex;
+  width: calc(100% - 3.25em);
+  justify-content: space-between;
 }
 
-#likeplus{
-  margin:0;
-  width:5.933333333333334em;
+#likeplus {
+  /*dit zijn de "like" en "plus" knopje onder de post*/
+  margin: 0;
+  width: 5.933333333333334em;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
 }
 
-#likeplus svg{
+#likeplus svg {
+  /*beiden svg's van zowel hartje als plus*/
   fill: #767676;
-  width:1em;
+  width: 1em;
 }
 
-#likeplus button{
-  width:2.6em; height:2.1333333333333333em;
+#likeplus button {
+  /*de buttons van like en plus*/
+  width: 2.6em;
+  height: 2.1333333333333333em;
+  padding: 0 0.7333333333333333em;
+  margin: 0;
+  border: solid 1px #d1d1d1;
+  border-radius: .3em;
+  background-color: white;
+}
+
+#downloadmore {
+  /*download en puntjes onder post*/
+  padding: 0;
+  margin: 0;
+  width: 5.933333333333334em;
+  flex-direction: row;
+  padding: 0;
+}
+
+#downloadmore svg{
+  fill: #767676;
+  height: 1.6em; width:2.13333333em;
+}
+
+#downloadmore button {
+  height: 2.1333333333333333em;
+  /* padding:0 0.7333333333333333em; */
+  margin: 0;
+  background-color: white;
+  align-items: center;
+  color:#767676;
+}
+
+#Download {
+  border-radius: .3em 0 0 .3em;
+  border: solid 1px #d1d1d1;
   padding:0 0.7333333333333333em;
-  margin:0;
-  border:solid 1px #d1d1d1;
-  border-radius:.3em;
-  background-color:white;
+  height: 30px;
+  font-size:14px;
+}
+
+#more {
+  border-radius: 0 .3em .3em 0;
+  border: solid 1px #d1d1d1;
+  padding:0;
+  border-left:0;
+  height:34px;
 }
 
 .visually-hidden {
