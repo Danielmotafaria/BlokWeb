@@ -24,13 +24,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+De eerste pagina is klaar, en ben begonnen aan de tweede pagina. De
 
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Ik ben bij een aantal dingen vastgelopen, en ben ziek geweest waardoor mijn werk nog een beetje ingehaald moet worden. Ik ben bezig met de templates van de posts en daarna wil ik aan de slag met de tweede pagina van de website. Hier ben ik een beetje over gestresst, maar opzich moet 
 
 
 
