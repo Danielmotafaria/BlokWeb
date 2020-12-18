@@ -12,6 +12,13 @@ body {
   background: white;
   margin: 0;
   position: relative;
+  background-color:red;
+}
+
+a {
+  /*om de blauwe kleur en onderstreep te verwijderen van links*/
+  color: #767676;
+  text-decoration: none;
 }
 
 @media(min-width:480px) {
@@ -26,263 +33,283 @@ body {
 
 @media(min-width:768px) {
 
-  header {
+  header{
     /*dit is me container/parent */
     z-index: 10;
     margin: 0;
     padding: 0 20px;
     height: 62px;
     max-width: 100%;
-    border:0;
     display: flex;
-    align-items:center;
+    align-items: center;
     background: white;
     overflow: hidden;
-   
   }
-  
+
   header a svg {
     width: 32px;
     height: 32px;
   }
 
-  header ul{
-    display:flex;
-    width:fit-content;
+  header ul {
+    display: flex;
+    width: fit-content;
     list-style-type: none;
-    padding:0 16px;
+    padding: 0 16px;
   }
 
-  header ul li{
-    width:fit-content;
-    display:flex;
-    align-items:center;
-    font-size:14px;
-    font-weight:500;
-    padding:20px 12px;
-  
-  }
-  
-  header ul li:first-of-type{
-    color:#111;
+  header ul li {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px 12px;
+
   }
 
-  header ul li span{
-    background: linear-gradient(94deg,#ff2a2a,#7074ff);
+  header ul li:first-of-type {
+    color: #111;
+  }
+
+  header ul li span {
+    background: linear-gradient(94deg, #ff2a2a, #7074ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-size:10px;
+    font-size: 10px;
     font-weight: 500;
-    position:relative;
-    top:-10px;
+    position: relative;
+    top: -10px;
   }
 
-  header ul li svg{
-    fill:#767676;
+  header ul li svg {
+    fill: #767676;
   }
 
-  #Submitphoto{
-    font-weight:500;
+  #Submitphoto {
+    font-weight: 500;
     font-size: 14px;
     color: #767676;
     background-color: white;
     border: 1px solid #d1d1d1;
     border-radius: 4px;
-    padding:0 11px;
-    height:30px;
+    padding: 0 11px;
+    height: 30px;
   }
 
-  #Bell{
-    padding:10px 14px;
-    margin-left:9px;
-    fill:#767676;
+  #Bell {
+    padding: 10px 14px;
+    margin-left: 9px;
+    height: 43.2px;
+    width: 48px;
   }
 
-  header button img{
-    border-radius:50%;
-    width:32px; 
-    height:32px;
-    overflow:hidden;
+  #Bell path {
+    fill: #767676;
+  }
+
+  header button img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
   }
 
   #Profile {
     padding: 0;
     margin: 0;
-    margin-left:6px;
+    margin-left: 6px;
     border: 0;
     height: fit-content;
-    border-radius:50%;
-    overflow:hidden;
+    border-radius: 50%;
+    overflow: hidden;
   }
 
   #Profile:focus {
     outline: none;
   }
-
-  #zoekbalk {
+  header #zoekbalk {
     /*Dit is de css voor de hele zoekbalk div*/
-    height: 2.5em;
-    width:fit-content;
-    border-radius: 1.6em;
-    background-color: #eee;
-    border: 0;
-    margin:0 0 0 1.2em;
-    
-    flex: 1;
-  }
-
-  header form button {
-    /*dit is niet alleen de icon */
-
-    height: 40px;
-    display: flex;
-    width:100%;
+    width: fit-content;
+    margin: 0 0 0 1.2em;
+    display:flex;
     flex-grow:1;
-    flex-shrink:1;
-    background-color: transparent;
-    border: 0;
   }
 
-  #searchSmallscreen{
-    background-color: transparent;
-    border: 0;
-    width:100%;
-    height: 100%;
-    padding: 1px 2px 4px 7px;
-    flex-grow:1;
-    flex-shrink:1;
-
-    font-size: 13.8px;
-  }
-
-  #searchBigscreen {
-    display:none;
-  }
-
-  #search-icon {
+  #zoekbalk button svg {
     margin: .1875em 0 0 .1875em;
     fill: #767676;
-
     height: 60%;
     padding-top: 6px;
   }
 
-  #hamburger {
+  form button svg path {
+    fill: #767676;
+  }
+
+  #searchBigscreen{
     display:none;
+  }
+
+  #hamburger {
+    display: none;
   }
 
   #Intro article:first-of-type {
     padding-top: 9.6em;
     padding-bottom: 152px;
   }
+
+  #themas {
+    /*dit is de bovenste <ul> op desktop*/
+    display: flex;
+    position: relative;
+    box-shadow: 0 4px .8em rgba(0, 0, 0, .08), 0 0 1px rgba(1, 0, 0, .1);
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  #themas::-webkit-scrollbar {
+    display: none;
+  }
+
+  section #themas li {
+    /*items in de menubalk*/
+    padding: 0 16px;
+    /*i.p.v 24px links (zoals op website), 12 aan elke kant zodat de scrollsnap er mooier uitziet*/
+    scroll-snap-align: start;
+    /*hij snapt nu aan de linkerkant vast*/
+
+  }
+
+  #themas li a {
+    font-size: 14px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+  }
+
+  #themas li:first-of-type a {
+    height: 56px;
+    color: #111;
+    pointer-events: none;
+    box-shadow: inset 0 -2px #111;
+  }
+
 }
 
-@media(max-width:768px) {
-  
-  header {
-    /*dit is me container/parent */
-    z-index: 10;
-    align-items: center;
-    margin: 0;
-    padding: 0.5em 0.8em;
-    height: 56px;
-    max-width: 100%;
 
-    display: grid;
+/*----------------------------------@MEDIA(MAX-WIDTH) EINDIGT HIER---------------------------------------------
+---------------------------------------------------------------------------------------------------------------*/
+
+header {
+  /*dit is me container/parent */
+  display: grid;
     grid-template-columns: min-content 1fr min-content min-content;
     column-gap: 1em;
     grid-column-start: auto;
-
-    background: white;
-    overflow: hidden;
     border-bottom: solid 1px rgba(229, 229, 229);
-  }
-
-  header ul{
-    display:none;
-  }
-
-  header li{
-    display:none;
-  }
-
-  #Submitphoto{
-    display:none;
-  }
-
-  #Bell{
-    display:none;
-  }
-
-  header a svg {
-    width: 26px;
-    height: 26px;
-  }
-
-  header button img {
-    border-radius: 50%;
-  }
-
-  #Profile {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    height: fit-content;
-    border-radius:50%;
-  }
-
-  #Profile:focus {
-    outline: none;
-  }
-
-  #zoekbalk {
-    /*Dit is de css voor de hele zoekbalk div*/
-    height: 2.5em;
-    border-radius: 1.6em;
-    background-color: #eee;
-    border: 0;
-    margin: 0;
-    flex: 1;
-  }
-
-  header form button {
-    /*dit is niet alleen de icon */
-
-    height: 40px;
-    display: flex;
-    width: 100%;
-    background-color: transparent;
-    border: 0;
-  }
-
-  #searchSmallscreen {
-    background-color: transparent;
-    border: 0;
-    width: 100%;
-    height: 100%;
-    padding: 1px 2px 4px 7px;
-
-    font-size: 13.8px;
-  }
   
-  #searchBigscreen{
-    display:none;
-  }
+  z-index: 10;
+  align-items: center;
+  margin: 0;
+  padding: 0.5em 0.8em;
+  height: 56px;
+  max-width: 100%;
 
-  #search-icon {
-    margin: .1875em 0 0 .1875em;
-    fill: #767676;
-
-    height: 60%;
-    padding-top: 6px;
-  }
-
-  #hamburger {
-    margin-right: 4px;
-    fill: #767676;
-  }
+  background: white;
+  overflow: hidden;
 }
+
+header a svg {
+  width: 26px;
+  height: 26px;
+}
+
+header button img {
+  border-radius: 50%;
+}
+header ul {
+  display: none;
+}
+
+header li {
+  display: none;
+}
+
+#Submitphoto {
+  display: none;
+}
+
+#Bell {
+  display: none;
+}
+
+#searchBigscreen {
+  display: none;
+}
+
+#Profile {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: fit-content;
+  border-radius: 50%;
+}
+
+#Profile:focus {
+  outline: none;
+}
+
+
+#zoekbalk{
+  /*Dit is de css voor de hele zoekbalk div*/
+  height: 2.5em;
+  width:100%;
+  border-radius: 1.6em;
+  background-color: #eee;
+  border: 0;
+  margin: 0;
+}
+
+#zoekbalk button {
+  /*dit is niet alleen de icon */
+
+  height: 40px;
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+}
+
+#searchSmallscreen {
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1px 2px 4px 7px;
+
+  font-size: 13.8px;
+}
+
+#zoekbalk button svg {
+  margin: .1875em 0 0 .1875em;
+  fill: #767676;
+
+  height: 60%;
+  padding-top: 6px;
+}
+
+#hamburger {
+  margin-right: 4px;
+}
+
+#hamburger path {
+  fill: #767676;
+}
+
+
 
 #themas {
   /*dit is de bovenste <ul>*/
@@ -295,47 +322,39 @@ body {
   position: relative;
   box-shadow: 0 4px .8em rgba(0, 0, 0, .08), 0 0 1px rgba(1, 0, 0, .1);
   overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
 
 #themas::-webkit-scrollbar {
   display: none;
 }
 
-a {
-  /*om de blauwe kleur en onderstreep te verwijderen*/
-  color: #767676;
-  text-decoration: none;
-}
-
-li {
+#themas li {
   /*items in de menubalk*/
-  padding-left: 1.6em;
+  padding: 0 .8em;
+  /*i.p.v 24px links (zoals op website), 12 aan elke kant zodat de scrollsnap er mooier uitziet*/
   height: 56px;
-  width: 500px;
+  width:fit-content;
   color: #767676;
+  scroll-snap-align: start;
+  /*hij snapt nu aan de linkerkant vast*/
+
 }
 
-li a {
+#themas li a {
   font-size: 14px;
   height: 56px;
   display: flex;
   align-items: center;
 }
 
-li:first-of-type {
-  padding-left: .8em;
-}
-
-li:first-of-type a {
+#themas li:first-of-type a {
   height: 56px;
   color: #111;
   pointer-events: none;
   box-shadow: inset 0 -2px #111;
 }
 
-li:last-of-type {
-  padding-right: .8em;
-}
 
 #Intro {
   margin: 0;
