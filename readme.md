@@ -24,7 +24,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
-De eerste pagina is klaar, en ben begonnen aan de tweede pagina. De
+Beiden pagina's zijn klaar. Responsiveness is waar ik mij op ga focussen en ben daar al zeker aan begonnen, de header leek mij erg lastig maar moet lukken. De interactie wordt mijn brug tussen de twee pagina's en dat gaat waarschijnlijk wel lastig worden. Die ga ik als laatste doen.  
 
 
 
