@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** Daniel Mota Faria
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -21,9 +21,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-<img src="images/eerstepaginaSS1">
-<img src="images/eerstepaginaSS2">
-<img src="images/tweedepaginaSS">
+<img src="images/eerstepaginaSS1.png">
+<img src="images/eerstepaginaSS2.png">
+<img src="images/tweedepaginaSS.png">
 
 
 ## Voortgang 3 (week 6)
