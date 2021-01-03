@@ -6,9 +6,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. <span>Photo by <a href="https://unsplash.com/@tobbes_rd?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tobias Rademacher</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+2. <span>Photo by <a href="https://unsplash.com/@chrissiey?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Chrissa Giannakoudi</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+3. https://unsplash.com/photos/hWXgoVLPzHY
+4. https://unsplash.com/photos/7ZWVnVSaafY
+5. https://unsplash.com/photos/JbASlYtciqk
+6. 
 
 
 
@@ -18,8 +21,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
-
+<img src="images/eerstepaginaSS1">
+<img src="images/eerstepaginaSS2">
+<img src="images/tweedepaginaSS">
 
 
 ## Voortgang 3 (week 6)

@@ -12,7 +12,35 @@ body {
   background: white;
   margin: 0;
   position: relative;
-  background-color:red;
+  background-color:white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+:focus {
+  outline: rgba(0, 0, 0, .2) solid 2px ;
+  opacity: 0.75;
+}
+
+header {
+  /*dit is me container/parent */
+  display: grid;
+    grid-template-columns: min-content 1fr min-content min-content;
+    column-gap: 1em;
+    grid-column-start: auto;
+    border-bottom: solid 1px rgba(229, 229, 229);
+  
+  z-index: 10;
+  align-items: center;
+  margin: 0;
+  padding: 0.5em 0.8em;
+  height: 56px;
+  max-width: 100%;
+
+  background: white;
+  overflow: hidden;
 }
 
 a {
@@ -21,6 +49,458 @@ a {
   text-decoration: none;
 }
 
+header a svg {
+  width: 26px;
+  height: 26px;
+}
+
+#searchBigscreen {
+  display: none;
+}
+
+#zoekbalk{
+  /*Dit is de css voor de hele zoekbalk div*/
+  height:40px;
+  width:100%;
+  border-radius: 1.6em;
+  background-color: #eee;
+  border: 0;
+  margin: 0;
+  display: flex;
+}
+
+#zoekbalk  svg {
+  margin: .1875em 0 0 .1875em;
+  fill: #767676;
+
+  height: 60%;
+  padding-top: 6px;
+}
+
+#searchSmallscreen {
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1px 2px 4px 7px;
+
+  font-size: 13.8px;
+}
+
+#Profile {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: fit-content;
+  border-radius: 50%;
+}
+
+header button img {
+  border-radius: 50%;
+}
+
+#hamburger {
+  margin-right: 4px;
+}
+
+#hamburger path {
+  fill: #767676;
+}
+
+#uitklapmenu{
+  position:absolute;
+  right:3.8em; top:2.8em;
+  width:250px;
+  background-color:black;
+  color:white;
+  padding: 8px 0 8px 0;
+  margin-top:.8em;
+  z-index: 15;
+  border-radius:4px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.16);
+}  
+
+#uitklapmenu ul{
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+
+#uitklapmenu ul li{
+  padding: 8px 16px;
+  display:flex;
+  line-height:1.6;
+}
+
+#uitklapmenu ul:last-of-type li{
+  color:#d1d1d1;
+}
+
+#uitklapmenu ul li a{
+  color:white;
+}
+
+#uitklapmenu ul li button{
+  color:#111;
+  background-color:white;
+  justify-content:center;
+  width:100%;
+  border:none;
+  border-radius:4px;
+  line-height:32px;
+}
+
+#uitklapmenu hr{
+  border: 1px solid transparent;
+  height: .5px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  background-color: hsla(0,0%,100%,.2);
+}
+
+#uitklapmenu.anders{
+  display:none;
+}
+
+#themas{
+  z-index:10;
+  position:relative;
+}
+
+#themas ul{
+  /*dit is de bovenste <ul> met alle categorieën */
+  list-style-type: none;
+  background-color: white;
+  height: 56px;
+  display: flex;
+  flex-flow:row nowrap;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 4px .8em rgba(0, 0, 0, .08), 0 0 1px rgba(1, 0, 0, .1);
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align:start;
+  white-space: nowrap;
+}
+
+#themas section{
+  display: flex;
+  flex-flow:row nowrap;
+}
+
+#themas::before { /*de ::before en ::after - states voor de fade*/
+  content:"";
+  position:absolute;
+  left:0; bottom:0; top:0;
+  width:100px;
+  background: linear-gradient(270deg,hsla(0,0%,100%,0) 0,#fff 95%,#fff);
+}
+
+#themas::after{ 
+  content:"";
+  position:absolute;
+  right:0; bottom:0; top:0;
+  width:100px;
+  background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff 95%,#fff);
+}
+
+#themas ul::-webkit-scrollbar {
+  display: none;
+}
+
+#themas ul li {
+  /*items in de menubalk*/
+  padding: 0 .8em;
+  /*i.p.v 24px links (zoals op website), 12 aan elke kant zodat de scrollsnap er mooier uitziet*/
+  height: 56px;
+  width:fit-content;
+  scroll-snap-align: start;
+  /*hij snapt nu aan de linkerkant vast*/
+}
+
+#themas ul li a {
+  font-size: 14px;
+  color: #767676;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+#themas ul section:first-of-type li:first-of-type a{
+  height: 56px;
+  color: #111;
+  pointer-events: none;
+  box-shadow: inset 0 -2px #111;
+}
+
+#view-all{
+  display:none;
+}
+
+#Intro {
+  margin: 0;
+  margin-bottom: 3.2em;
+  width: 100%;
+  /*size of the section*/
+
+  background-image: url('../images/photo1.jpg');
+  /*background fuckwith*/
+  background-size: cover;
+  background-position: center;
+}
+
+
+article {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  padding: 2.1333333333333333em .8em;
+  margin: 0;
+}
+
+#Intro article h2 {
+  color: white;
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: .2em;
+}
+
+h2 {
+  color: white;
+  margin: 0;
+  line-height: 1.6;
+}
+
+#Squarespace-article {
+  padding:1.3333333em 1.3333333em 1.3333333em .8em;
+}
+
+section article p {
+  color:white;
+  margin: 0;
+  line-height: 1.6;
+  width: 100%;
+}
+
+#Squarespace-article p {
+  color: hsla(0,0%,100%,.55);
+  font-size:13px;
+}
+
+#Squarespace-article p a{
+  color: hsla(0,0%,100%,.8);
+  font-size:13px;
+}
+
+#Squarespace-article div{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1;
+  height:fit-content;
+  padding:0;
+}
+
+#squarespace {
+  font-family: "object-fit:contain";
+  max-width: 150px;
+  height: 1.20em;
+  object-fit: contain;
+  opacity: .8;
+  margin-top: -1em;
+  transform: translateY(-40%);
+}
+
+#cywt {
+  color: white;
+  opacity: .8;
+  margin: 0;
+
+  font-size: .8em;
+} 
+
+section {
+  background-color: white;
+  color: black;
+}
+
+.grid-item {
+  padding: 0 0 2.5833333333333335em 0;
+}
+
+#abovepost {
+  /*poster - template*/
+  display: flex;
+  padding: 0;
+  margin: .8em;
+  margin-top: 0;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 34.4px;
+  width: fit-content;
+}
+
+#abovepost img {
+  /*profile pic*/
+  border-radius: 100px;
+  border: solid 1px rgba(118, 118, 118, .20);
+  width: 32px;
+  height: 32px;
+  margin-right: .5em;
+}
+
+#abovepost h3 {
+  /* post naam*/
+  margin: 0;
+  height: 1em;
+  padding: 0;
+  width: fit-content;
+  display:inline;
+}
+
+#abovepost a {
+  /*post description*/
+  margin: 0;
+  font-size: 11px;
+}
+
+#abovepost p {
+  margin:0;
+}
+
+#post {
+  /*de foto die geplaatst wordt*/
+  width: 100%;
+  position:relative;
+  z-index:0;
+}
+
+#onderpost {
+  /*dit is de hele balk onder de post*/
+  margin: .75em .8em;
+  display: flex;
+  flex-flow:row nowrap;
+  fill: 1;
+  justify-content: space-between;
+  height: 32px;
+  padding:0;
+  width:calc(100% - 24px);
+}
+
+#onderpost div:first-of-type {
+  /*dit zijn de "like" en "plus" knopje onder de post*/
+  margin: 0;
+  width: 5.933333333333334em;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+#onderpost div:first-of-type svg {
+  /*beiden svg's van zowel hartje als plus*/
+  fill: #767676;
+  width: 1em;
+}
+
+#onderpost div:first-of-type button {
+  /*de buttons van like en plus*/
+  width: 2.6em;
+  height: 2.1333333333333333em;
+  padding: 0 0.7333333333333333em;
+  margin: 0;
+  border: solid 1px #d1d1d1;
+  border-radius: .3em;
+  background-color: white;
+}
+
+#downloadmore {
+  /*download en puntjes onder post*/
+  padding: 0;
+  margin: 0;
+  display:flex;
+  justify-content: flex-end;
+  width: 5.933333333333334em;
+  flex-flow: row nowrap;
+  justify-self: flex-end;
+}
+
+#downloadmore svg {
+  fill: #767676;
+  height: 1.6em;
+  width: 2.13333333em;
+}
+
+#downloadmore button {
+  height: 32px;
+  /* padding:0 0.7333333333333333em; */
+  margin: 0;
+  background-color: white;
+  align-items: center;
+  color: #767676;
+}
+
+#downloadmore button:first-of-type{
+  border-radius: .3em 0 0 .3em;
+  border: solid 1px #d1d1d1;
+  padding: 0 0.7333333333333333em;
+  font-size: 14px;
+  height: 32px;
+}
+
+#downloadmore button:last-of-type {
+  border-radius: 0 .3em .3em 0;
+  border: solid 1px #d1d1d1;
+  padding: 0;
+  border-left: 0;
+}
+
+.visually-hidden {
+  /* https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/ */
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media(max-width:768px){
+  header ul {
+    display: none;
+  }
+  
+  header li {
+    display: none;
+  }
+  
+  #Submitphoto {
+    display: none;
+  }
+  
+  #Bell {
+    display: none;
+  }
+
+  #view-all{
+    display:none;
+  }
+
+  #view-all{
+    display:none;
+  }
+
+  #Intro article:first-of-type div{
+    display:none;
+  }
+
+  #Squarespace-article div p:first-of-type{
+    display:none;
+  }
+
+}
 @media(min-width:480px) {
   #Intro article:first-of-type {
     padding: 80px 12px 64px;
@@ -29,21 +509,23 @@ a {
   section article p:nth-of-type(2) {
     margin-bottom: 24px;
   }
+  
 }
 
 @media(min-width:768px) {
-
   header{
     /*dit is me container/parent */
-    z-index: 10;
-    margin: 0;
     padding: 0 20px;
+    border:none;
     height: 62px;
     max-width: 100%;
-    display: flex;
+    display:flex;
+    flex-grow:1;
+    flex-shrink:1;
     align-items: center;
     background: white;
-    overflow: hidden;
+    position:sticky;
+    top:0; left:0; right:0;
   }
 
   header a svg {
@@ -51,9 +533,18 @@ a {
     height: 32px;
   }
 
+  #zoekbalk {
+    /*Dit is de css voor de hele zoekbalk div*/
+    margin-left: 1.2em;
+    width:fit-content;
+    flex-grow:1;
+    flex-shrink:1;
+  }
+
   header ul {
     display: flex;
     width: fit-content;
+    margin:0;
     list-style-type: none;
     padding: 0 16px;
   }
@@ -65,7 +556,7 @@ a {
     font-size: 14px;
     font-weight: 500;
     padding: 20px 12px;
-
+    color: #767676;
   }
 
   header ul li:first-of-type {
@@ -96,6 +587,8 @@ a {
     border-radius: 4px;
     padding: 0 11px;
     height: 30px;
+    width:fit-content;
+    white-space: nowrap;
   }
 
   #Bell {
@@ -113,7 +606,6 @@ a {
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    overflow: hidden;
   }
 
   #Profile {
@@ -121,448 +613,249 @@ a {
     margin: 0;
     margin-left: 6px;
     border: 0;
-    height: fit-content;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-
-  #Profile:focus {
-    outline: none;
-  }
-  header #zoekbalk {
-    /*Dit is de css voor de hele zoekbalk div*/
     width: fit-content;
-    margin: 0 0 0 1.2em;
-    display:flex;
-    flex-grow:1;
-  }
-
-  #zoekbalk button svg {
-    margin: .1875em 0 0 .1875em;
-    fill: #767676;
-    height: 60%;
-    padding-top: 6px;
-  }
-
-  form button svg path {
-    fill: #767676;
-  }
-
-  #searchBigscreen{
-    display:none;
+    border-radius: 50%;
   }
 
   #hamburger {
     display: none;
   }
 
-  #Intro article:first-of-type {
-    padding-top: 9.6em;
-    padding-bottom: 152px;
+  body section:first-of-type{
+    position:sticky;
+    top: 62px;
   }
 
-  #themas {
+  #uitklapmenu{
+    right:20px; top:50px;
+    width: 178px;
+  }
+
+  #uitklapmenu ul:first-of-type li:first-of-type{
+    display:none;
+  }
+
+  #uitklapmenu ul:first-of-type li:last-of-type{
+    display:none;
+  }
+
+  #themas{
+    position:sticky;
+  }
+
+  #themas ul{
     /*dit is de bovenste <ul> op desktop*/
-    display: flex;
     position: relative;
     box-shadow: 0 4px .8em rgba(0, 0, 0, .08), 0 0 1px rgba(1, 0, 0, .1);
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    scroll-padding: 175px;
   }
 
-  #themas::-webkit-scrollbar {
+  #themas::before { /*de ::before en ::after - states voor de fade*/
+    left:182px; 
+  }
+  
+  #themas::after{ 
+    right:87px;
+  }
+
+  #themas ul::-webkit-scrollbar {
     display: none;
   }
-
-  section #themas li {
-    /*items in de menubalk*/
-    padding: 0 16px;
-    /*i.p.v 24px links (zoals op website), 12 aan elke kant zodat de scrollsnap er mooier uitziet*/
-    scroll-snap-align: start;
-    /*hij snapt nu aan de linkerkant vast*/
-
+  
+  #themas ul section li:first-of-type{
+    padding-left:20px;
   }
 
-  #themas li a {
-    font-size: 14px;
-    height: 56px;
-    display: flex;
+  #themas ul li {
+    /*items in de menubalk*/
+    padding:0 0 0 32px;
+    display:flex;
     align-items: center;
   }
 
-  #themas li:first-of-type a {
+  #themas section:first-of-type{
+    position:sticky;
+    left:0;
+    display:flex;
+    padding-right: 20px;
+    border-right: 1px solid #d1d1d1;
+    background-color:white;
+  }
+
+  #themas section:last-of-type{
+    position:sticky;
+    right:0;
+    display:flex;
+    padding-right: 20px;
+    white-space: nowrap;
+    background-color:white;
+  }
+
+  #themas section li a {
+    font-size: 14px;
     height: 56px;
-    color: #111;
-    pointer-events: none;
-    box-shadow: inset 0 -2px #111;
+  }  
+
+  #Intro article:first-of-type {
+    padding-top: 9.6em;
+    padding-bottom: 152px;
+    margin-left:auto;
+    margin-right:auto;
+    width:66.66666667%;
+  }
+
+  #Intro article h2{
+    font-weight:700;
+    font-size:46px;
+    line-height:1.2;
+  }
+
+  #Intro article:first-of-type p:first-of-type{
+    margin-top: .67em;
+    font-size:18px;
+  }
+
+  #Intro article:first-of-type p u{
+    font-size:18px;
+  }
+
+  #Intro article:first-of-type p:last-of-type{
+    margin-bottom:24px;
+    font-size:18px;
+  }
+
+  #Squarespace-article{
+    padding:1.333333em;
+  }
+  
+  #Squarespace-article img{
+    height:34px;
+    position: absolute;
+    margin-top:-23px;
+    right:20px;
+  }
+  #Squarespace-article div{
+    display:grid;
+    width: 100%;
+    white-space: nowrap;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #Squarespace-article p{
+    text-align:left;
+    padding:0;
+    margin:0;
+  }
+
+  #cywt{
+    display:flex;
+    justify-content: flex-end;
+    padding:0;
+    margin:0;
+    font-size:13px;
+  }
+  
+
+  #Intro article:first-of-type div{
+    display: flex;
+    align-items: center;
+    background:white;
+    width:100%;
+    height:56px;
+    line-height:1.6;
+    border-radius: 4px;
+  } 
+  
+  #Intro article div svg{
+    margin-left:14px;
+    width:25.6px;
+  }
+
+  #Intro article div path{
+    fill:#767676;
+  }
+
+  #Intro article div input{
+    height:100%;
+    width:100%;
+    background:none;
+    margin:none;
+    border:none;
+    padding-left:.8em;
+  }
+ 
+  .grid {
+    display: flex;
+    padding: 12px;
+    column-gap: 24px;
+    position:relative;
+    z-index:0;
+  }
+  
+  .grid-col {
+    flex-grow: 1;
+    width: 50%;
+    padding:0;
+    margin:0;
+    padding-bottom:24px;
+  }
+
+  .grid-item{
+    padding:0;
+    padding-bottom:24px;
+    position:relative;
+    width: 46.8vw;
+    height:fit-content;
+    top:0;
+  }
+
+  #abovepost{
+    display:none;
+  }
+
+  #onderpost{
+    display:none;
   }
 
 }
 
+@media (max-width:992px){
+  #searchBigscreen{
+    display:none;
+  }
 
-/*----------------------------------@MEDIA(MAX-WIDTH) EINDIGT HIER---------------------------------------------
----------------------------------------------------------------------------------------------------------------*/
+  #Squarespace-article div p:nth-of-type(2){
+    display:none;
+  }
 
-header {
-  /*dit is me container/parent */
-  display: grid;
-    grid-template-columns: min-content 1fr min-content min-content;
-    column-gap: 1em;
-    grid-column-start: auto;
-    border-bottom: solid 1px rgba(229, 229, 229);
+}
+
+@media (min-width:992px){
   
-  z-index: 10;
-  align-items: center;
-  margin: 0;
-  padding: 0.5em 0.8em;
-  height: 56px;
-  max-width: 100%;
+  #searchSmallscreen{
+    display:none;
+  }
 
-  background: white;
-  overflow: hidden;
-}
+  #searchBigscreen{
+    display:flex;
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1px 2px 4px 7px;
+    font-size: 13.8px;
+  }
+  
+  #Squarespace-article div{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-header a svg {
-  width: 26px;
-  height: 26px;
-}
+  #Squarespace-article div p:nth-of-type(2){
+    text-align:center;
+    margin-bottom:0;
+  }
 
-header button img {
-  border-radius: 50%;
-}
-header ul {
-  display: none;
-}
-
-header li {
-  display: none;
-}
-
-#Submitphoto {
-  display: none;
-}
-
-#Bell {
-  display: none;
-}
-
-#searchBigscreen {
-  display: none;
-}
-
-#Profile {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  height: fit-content;
-  border-radius: 50%;
-}
-
-#Profile:focus {
-  outline: none;
-}
-
-
-#zoekbalk{
-  /*Dit is de css voor de hele zoekbalk div*/
-  height: 2.5em;
-  width:100%;
-  border-radius: 1.6em;
-  background-color: #eee;
-  border: 0;
-  margin: 0;
-}
-
-#zoekbalk button {
-  /*dit is niet alleen de icon */
-
-  height: 40px;
-  display: flex;
-  width: 100%;
-  background-color: transparent;
-  border: 0;
-}
-
-#searchSmallscreen {
-  background-color: transparent;
-  border: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1px 2px 4px 7px;
-
-  font-size: 13.8px;
-}
-
-#zoekbalk button svg {
-  margin: .1875em 0 0 .1875em;
-  fill: #767676;
-
-  height: 60%;
-  padding-top: 6px;
-}
-
-#hamburger {
-  margin-right: 4px;
-}
-
-#hamburger path {
-  fill: #767676;
-}
-
-
-
-#themas {
-  /*dit is de bovenste <ul>*/
-  list-style-type: none;
-  background-color: white;
-  height: 56px;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  box-shadow: 0 4px .8em rgba(0, 0, 0, .08), 0 0 1px rgba(1, 0, 0, .1);
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
-
-#themas::-webkit-scrollbar {
-  display: none;
-}
-
-#themas li {
-  /*items in de menubalk*/
-  padding: 0 .8em;
-  /*i.p.v 24px links (zoals op website), 12 aan elke kant zodat de scrollsnap er mooier uitziet*/
-  height: 56px;
-  width:fit-content;
-  color: #767676;
-  scroll-snap-align: start;
-  /*hij snapt nu aan de linkerkant vast*/
-
-}
-
-#themas li a {
-  font-size: 14px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-}
-
-#themas li:first-of-type a {
-  height: 56px;
-  color: #111;
-  pointer-events: none;
-  box-shadow: inset 0 -2px #111;
-}
-
-
-#Intro {
-  margin: 0;
-  margin-bottom: 3.2em;
-  width: 100%;
-  /*size of the section*/
-
-  background-image: url('../images/photo1.jpg');
-  /*background fuckwith*/
-  background-size: cover;
-  background-position: center;
-}
-
-
-article {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-
-  padding: 2.1333333333333333em .8em;
-  margin: 0;
-}
-
-#Unsplashtitel {
-  color: white;
-  font-size: 1.6em;
-  font-weight: 700;
-  margin: 0;
-  margin-bottom: .2em;
-}
-
-h2 {
-  color: white;
-  margin: 0;
-  line-height: 1.6;
-}
-
-section article p {
-  color: white;
-  margin: 0;
-  line-height: 1.6;
-  width: 100%;
-}
-
-#Squarespace-article {
-  padding: 1.333333em 1.333333em 1.333333em .8em;
-}
-
-#squarespace {
-  font-family: "object-fit:contain";
-
-  max-width: 150px;
-  height: 1.20em;
-  object-fit: contain;
-  opacity: .8;
-  margin-top: -1em;
-  transform: translateY(-40%);
-}
-
-#cywt {
-  color: white;
-  opacity: .8;
-  margin: 0;
-
-  font-size: .8em;
-}
-
-section {
-  background-color: white;
-  color: black;
-}
-
-#Posttemplate {
-  padding-bottom: 2.5833333333333335em;
-
-}
-
-#abovepost {
-  /*poster - template*/
-  display: flex;
-  padding: 0;
-  margin: .8em;
-  margin-top: 0;
-  flex-flow: column wrap;
-  justify-content: center;
-  height: 34.4px;
-  width: fit-content;
-  text-align: justify;
-}
-
-#profilepic {
-  /*profile pic*/
-  border-radius: 100px;
-  border: solid 1px rgba(118, 118, 118, .20);
-  width: 32px;
-  height: 32px;
-  margin-right: .5em;
-}
-
-#abovepost h3 {
-  /* post naam*/
-  margin: 0;
-  height: 1em;
-  padding: 0;
-  width: fit-content;
-}
-
-section:nth-of-type(3) a {
-  /*post description*/
-  margin: 0;
-  font-size: 11px;
-}
-
-#post {
-  /*de foto die geplaatst wordt*/
-  width: 100%;
-}
-
-#onderpost {
-  /*dit is de hele balk onder de post*/
-  margin: .75em .8em;
-  display: flex;
-  fill: 1;
-  justify-content: space-between;
-  height: 32px;
-}
-
-#likeplus {
-  /*dit zijn de "like" en "plus" knopje onder de post*/
-  margin: 0;
-  width: 5.933333333333334em;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0;
-}
-
-#likeplus svg {
-  /*beiden svg's van zowel hartje als plus*/
-  fill: #767676;
-  width: 1em;
-}
-
-#likeplus button {
-  /*de buttons van like en plus*/
-  width: 2.6em;
-  height: 2.1333333333333333em;
-  padding: 0 0.7333333333333333em;
-  margin: 0;
-  border: solid 1px #d1d1d1;
-  border-radius: .3em;
-  background-color: white;
-}
-
-#downloadmore {
-  /*download en puntjes onder post*/
-  padding: 0;
-  margin: 0;
-  justify-content: flex-end;
-  width: 5.933333333333334em;
-  flex-direction: row;
-}
-
-#downloadmore svg {
-  fill: #767676;
-  height: 1.6em;
-  width: 2.13333333em;
-}
-
-#downloadmore button {
-  height: 32px;
-  /* padding:0 0.7333333333333333em; */
-  margin: 0;
-  background-color: white;
-  align-items: center;
-  color: #767676;
-}
-
-#Download {
-  border-radius: .3em 0 0 .3em;
-  border: solid 1px #d1d1d1;
-  padding: 0 0.7333333333333333em;
-  font-size: 14px;
-  height: 32px;
-}
-
-#more {
-  border-radius: 0 .3em .3em 0;
-  border: solid 1px #d1d1d1;
-  padding: 0;
-  border-left: 0;
-}
-
-/*
-#uitklapmenu{
-  width:250px;
-  background-color:black;
-  position:relative;
-}  */
-
-
-
-.visually-hidden {
-  /* https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/ */
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  #Squarespace-article div p:last-of-type{
+    text-align:end;
+  }
 }
