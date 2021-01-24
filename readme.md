@@ -11,13 +11,18 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 3. https://unsplash.com/photos/hWXgoVLPzHY
 4. https://unsplash.com/photos/7ZWVnVSaafY
 5. https://unsplash.com/photos/JbASlYtciqk
-6. 
+6. <span>Photo by <a href="https://unsplash.com/@deonvnzl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Deon van Zyl</a> on <a href="https://unsplash.com/@danielmotafaria/likes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+7. https://www.w3schools.com/
+8. https://css-tricks.com/ 
+9. https://stackoverflow.com/
+10. <span>Photo by <a href="https://unsplash.com/@northernstatemedia?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sonny Mauricio</a> on <a href="https://unsplash.com/@danielmotafaria/likes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+11. <span>Photo by <a href="https://unsplash.com/@thombradley?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Thom Bradley</a> on <a href="https://unsplash.com/@danielmotafaria/likes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+12. https://unsplash.com/
 
 
 
 ## Eindgesprek (week 7/8)
-
--dit ging goed & dit was lastig-
+Het responsive maken van de website is uiteindelijk helemaal gelukt. Ook de interactie van de ene naar de andere website is goed gegaan, de "like" interactie is met iets te veel moeite nog gelukt. Ik heb meer content toegevoegd aan de tweede pagina zodat het er iets meer afgemaakt uitziet. Mijn Css is nu volledig zonder px, en heb mijn html netter gemaakt.
 
 **Screenshot(s):**
 

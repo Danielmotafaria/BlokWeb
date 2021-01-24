@@ -1,4 +1,5 @@
 <html lang="nl">
+<!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
@@ -15,65 +16,72 @@
         Unsplash.</h1>
 
     <header>
-        <a title="Home — Unsplash" href="/">
+        <a title="Home — Unsplash" href="index.html">
             <svg viewBox="0 0 32 32" aria-labelledby="unsplash-home" aria-hidden="false">
                 <title id="unsplash-home">Unsplash Home</title>
                 <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"> </path>
             </svg>
         </a>
 
-        <div role="search" id="zoekbalk" action="#">
-            <button>
-                <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
-                    <path
-                        d="M31 28.64l-7.57-7.57a12.53 12.53 0 1 0-2.36 2.36l7.57 7.57zm-17.5-6a9.17 9.17 0 1 1 6.5-2.64 9.11 9.11 0 0 1-6.5 2.67z">
-                    </path>
-                </svg>
-                <input id="searchSmallscreen" placeholder="Search photos" autocomplete="off" aria-label="zoeken">
-                <input id="searchBigscreen" placeholder="Search free high-resolution photos" autocomplete="off"
-                    aria-label="zoeken">
-            </button>
-        </div>
+        <form role="search" id="zoekbalk" action="#">
+            <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                <path
+                    d="M31 28.64l-7.57-7.57a12.53 12.53 0 1 0-2.36 2.36l7.57 7.57zm-17.5-6a9.17 9.17 0 1 1 6.5-2.64 9.11 9.11 0 0 1-6.5 2.67z">
+                </path>
+            </svg>
+            <input id="searchSmallscreen" placeholder="Search photos" autocomplete="off" aria-label="zoeken">
+            <input id="searchBigscreen" placeholder="Search free high-resolution photos" autocomplete="off"
+                aria-label="zoeken">
+        </form>
 
         <ul>
-            <li>Home</li>
-            <li>Brands&nbsp;<span>New</span></li>
-            <li><svg width="18" height="18" viewBox="0 0 32 32" aria-hidden="false">
-                    <path
-                        d="M7 15.5c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5zm21.5-3.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5zm-12.5 0c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z">
-                    </path>
-                </svg></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Brands&nbsp;<span>New</span></a></li>
+            <li><a href="#"><svg width="18" height="18" viewBox="0 0 32 32" aria-hidden="false">
+                        <path
+                            d="M7 15.5c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5zm21.5-3.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5zm-12.5 0c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z">
+                        </path>
+                    </svg></a></li>
         </ul>
 
         <button id="Submitphoto">Submit a photo</button>
 
-        <div id="Bell"><svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="false">
-                <path
-                    d="M18.9 30.6c-7.4 2.6-14.2 1.4-15.7-2.8-.5-1.5-.2-3.2.8-4.9.5-.8.5-2.1.2-3l-1.4-3.9c-.9-2.6-.7-5.2.3-7.5.7-1.7 2-3.1 3.5-4.1l-.4-1c-.4-1.1.2-2.2 1.3-2.6l1.9-.7c1.1-.4 2.2.2 2.6 1.3l.4 1c2-.2 4.1.3 5.9 1.4 1.9 1.2 3.5 3.1 4.3 5.4l1.4 3.9c.3.8 1.2 1.9 2 2.2 1.8.7 3 1.8 3.6 3.4 1.4 4.2-3.2 9.3-10.7 11.9zm7.3-10.8c-.6-1.7-5.2-2.8-11.3-.7-6.1 2.1-9 5.8-8.4 7.5.6 1.7 5.2 2.8 11.3.7 6.1-2.1 9-5.8 8.4-7.5zm-7.2.8l.1.8c0 1.9-1.1 3.6-2.7 4.4-.6.3-1.3.6-2.1.6h-.1c-1.6 0-2.9-.8-3.9-1.9-.1-.2-.1-.5.1-.6 1.1-.9 2.8-2 5.3-2.8 1-.3 2-.6 2.9-.8.1-.1.3.1.4.3z">
-                </path>
-            </svg>
+        <div id="Bell">
+            <a href="#"><svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="false">
+                    <path
+                        d="M18.9 30.6c-7.4 2.6-14.2 1.4-15.7-2.8-.5-1.5-.2-3.2.8-4.9.5-.8.5-2.1.2-3l-1.4-3.9c-.9-2.6-.7-5.2.3-7.5.7-1.7 2-3.1 3.5-4.1l-.4-1c-.4-1.1.2-2.2 1.3-2.6l1.9-.7c1.1-.4 2.2.2 2.6 1.3l.4 1c2-.2 4.1.3 5.9 1.4 1.9 1.2 3.5 3.1 4.3 5.4l1.4 3.9c.3.8 1.2 1.9 2 2.2 1.8.7 3 1.8 3.6 3.4 1.4 4.2-3.2 9.3-10.7 11.9zm7.3-10.8c-.6-1.7-5.2-2.8-11.3-.7-6.1 2.1-9 5.8-8.4 7.5.6 1.7 5.2 2.8 11.3.7 6.1-2.1 9-5.8 8.4-7.5zm-7.2.8l.1.8c0 1.9-1.1 3.6-2.7 4.4-.6.3-1.3.6-2.1.6h-.1c-1.6 0-2.9-.8-3.9-1.9-.1-.2-.1-.5.1-.6 1.1-.9 2.8-2 5.3-2.8 1-.3 2-.6 2.9-.8.1-.1.3.1.4.3z">
+                    </path>
+                </svg>
+            </a>
         </div>
         <button id="Profile">
-            <img src="images/Avatar-profile.jpg">
+            <img src="images/Mypf.jpg">
         </button>
 
         <svg id="hamburger" width="24" height="24" viewBox="0 0 32 32" aria-hidden="false">
             <path d="M4 21.3h24V24H4v-2.7zM4 8v2.7h24V8H4zm0 9.3h24v-2.7H4v2.7z"></path>
         </svg>
+            
+            <ul id="uitklapmenu" class="anders">
+                <li><a href="#">Notifications</a></li>
+                <li><a href="Tweedepagina.html">View profile</a></li>
+                <li><a href="#">Stats</a></li>
+                <li><a href="#">Account settings</a></li>
+                <li> <button>Submit a photo</button></li>
+                <li><a href="#">Logout @danielmotafaria</a></li>
+            </ul>
     </header>
 
     <section id="profile-info">
         <h2 class="visually-hidden">profile info</h2>
         <div>
-            <img srcset="https://images.unsplash.com/placeholder-avatars/extra-large.jpg?dpr=1&amp;auto=format&amp;fit=crop&amp;w=27&amp;h=27&amp;q=60&amp;crop=faces&amp;bg=fff 1x, https://images.unsplash.com/placeholder-avatars/extra-large.jpg?dpr=2&amp;auto=format&amp;fit=crop&amp;w=27&amp;h=27&amp;q=60&amp;crop=faces&amp;bg=fff 2x"
-                src="https://images.unsplash.com/placeholder-avatars/extra-large.jpg?auto=format&amp;fit=crop&amp;w=27&amp;h=27&amp;q=60&amp;crop=faces&amp;bg=fff"
-                alt="Avatar of user Daniel Mota Faria">
+            <img src="images/Mypf.jpg" alt="Avatar of user Daniel Mota Faria">
         </div>
 
         <div>
             <h1>Daniel Mota Faria</h1>
 
-            <a>
+            <a href="#">
                 <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
                     <path
                         d="M18.7 8.3l5 5L9 28H4v-5L18.7 8.3zm8.9-.8l-3.1-3.1c-.5-.5-1.4-.5-1.9 0l-2.4 2.4 5 5 2.4-2.4c.5-.5.5-1.4 0-1.9z">
@@ -81,7 +89,7 @@
                 </svg>
                 <p>Edit profile</p>
             </a>
-        
+
             <h2>Download free, beautiful high-quality photos curated by Daniel.</h2>
         </div>
     </section>
@@ -96,14 +104,18 @@
                             d="M26.7 4H5.3C4.5 4 4 4.5 4 5.3v21.3c0 .9.5 1.4 1.3 1.4h21.3c.8 0 1.3-.5 1.3-1.3V5.3c.1-.8-.4-1.3-1.2-1.3zm-20 20l4.7-6 3.3 4 4.7-6 6 8H6.7z">
                         </path>
                     </svg>
-                    Photos<span>&nbsp;0</span></a></li>
+                    Photos<span>&nbsp;0</span>
+                </a>
+            </li>
             <li><a href="#"><svg class="icons" width="32" height="32" class="DhJsa" version="1.1" viewBox="0 0 32 32"
                         aria-hidden="false">
                         <path
                             d="M28.6 16.6L16 29.3 3.5 16.6c-2.8-3-2.9-7.7 0-10.5s7.6-2.8 10.4 0L16 8.3l2.1-2.2c2.9-2.8 7.6-2.8 10.4 0 2.9 3 2.9 7.6.1 10.5z">
                         </path>
                     </svg>
-                    Likes<span>&nbsp;0</span></a></li>
+                    Likes<span>&nbsp;6</span>
+                </a>
+            </li>
             <li><a href="#"><svg class="icons" width="32" height="32" class="DhJsa" version="1.1" viewBox="0 0 32 32"
                         aria-hidden="false">
                         <path
@@ -113,20 +125,227 @@
                             d="M27.8501 14.46c-.327-.158-.6856-.24-1.0488-.24-.3632 0-.7218.082-1.0488.24l-8.6832 4.0613c-.3326.1666-.6995.2533-1.0716.2533-.3721 0-.7391-.0867-1.0717-.2533l-8.71066-4.0247c-.33699-.1628-.70648-.2474-1.08082-.2474-.37434 0-.74383.0846-1.08082.2474-.71444.3476-1.4472.686-2.1708 1.0244-.23815.119-.54957.183-.54957.5031 0 .3202.31142.4117.54041.5214.22899.1098 12.78016 5.9501 13.09806 6.1012.3179.1511.6764.25 1.0259.2927.3788-.0358.7281-.1478 1.0625-.3293.3343-.1814 13.374-6.2655 13.4278-6.2932.0538-.0277.099-.0697.1305-.1213.0315-.0517.0482-.111.0482-.1715 0-.0604-.0167-.1197-.0482-.1714-.0315-.0516-.0767-.0936-.1305-.1213-.0538-.0277-2.3109-1.1135-2.6379-1.2714z">
                         </path>
                     </svg>
-                    Collections<span>&nbsp;1</span></a></li>
+                    Collections<span>&nbsp;1</span>
+                </a>
+            </li>
             <li><a href="#"><svg class="icons" width="32" height="32" class="DhJsa" version="1.1" viewBox="0 0 32 32"
                         aria-hidden="false">
                         <path
                             d="M13.3333 28V10.6667h5.3334V28h-5.3334zm9.3334 0V2.66669H28V28h-5.3333zM4 28v-9.3333h5.33333V28H4z">
                         </path>
                     </svg>
-                    Stats</a></li>
+                    Stats
+                </a>
+            </li>
         </ul>
     </section>
 
-    <section id="no-content">
-        <h2 class="visually-hidden">No content available</h2>
-        <img alt="No content available" src="images/No-content.png">
+    <section class="grid" id="posts">
+
+        <div class="grid-col grid-col--1">
+
+            <article class="grid-item">
+                <div id="abovepost">
+                    <h2 class="visually-hidden">First liked picture</h2>
+                    <img src="images/pf7.jpg">
+                    <div>
+                        <h3>Deon van Zyl</h3>
+                    </div>
+                </div>
+                <img id="post" src="images/Like1.jpg">
+                <article id="onderpost">
+                    <div>
+                        <button id="Like" class="skrt"><svg width="32" height="32" viewBox="0 0 32 32"
+                                aria-hidden="false">
+                                <path
+                                    d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="downloadmore">
+                        <button>Download</button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+            </article>
+
+            <article class="grid-item" id="Posttemplate">
+                <div id="abovepost">
+                    <h2 class="visually-hidden">Account</h2>
+                    <img src="images/pf8.jpg">
+                    <h3>Sonny Mauricio</h3>
+                </div>
+                <h2 class="visually-hidden">Post</h2>
+                <img id="post" src="images/Like2.jpg">
+                <article id="onderpost">
+                    <h2 class="visually-hidden">Options</h2>
+                    <div>
+                        <button id="Like" class="skrt"><svg width="32" height="32" viewBox="0 0 32 32"
+                                aria-hidden="false">
+                                <path
+                                    d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="downloadmore">
+                        <button>Download</button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+            </article>
+
+
+            <article class="grid-item" id="Posttemplate">
+                <div id="abovepost">
+                    <h2 class="visually-hidden">Account</h2>
+                    <img src="images/PF6.png">
+                    <h3>Chrissa Giannakoudi</h3>
+                </div>
+                <h2 class="visually-hidden">Post</h2>
+                <img id="post" src="images/Water.jpg">
+                <article id="onderpost">
+                    <h2 class="visually-hidden">Options</h2>
+                    <div>
+                        <button id="Like" class="skrt"><svg width="32" height="32" viewBox="0 0 32 32"
+                                aria-hidden="false">
+                                <path
+                                    d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="downloadmore">
+                        <button>Download</button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+            </article>
+        </div>
+
+        <div class="grid-col grid-col--2">
+
+            <article class="grid-item" id="Posttemplate">
+                <div id="abovepost">
+                    <h2 class="visually-hidden">Account</h2>
+                    <img src="images/pf9.jfif">
+                    <h3>Thom Bradley</h3>
+                </div>
+                <h2 class="visually-hidden">Post</h2>
+                <img id="post" src="images/Like3.jpg">
+                <article id="onderpost">
+                    <div>
+                        <button id="Like" class="skrt"><svg width="32" height="32" viewBox="0 0 32 32"
+                                aria-hidden="false">
+                                <path
+                                    d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="downloadmore">
+                        <button>Download</button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+            </article>
+
+            <article class="grid-item" id="Posttemplate">
+                <!-- https://unsplash.com/photos/hWXgoVLPzHY -->
+                <div id="abovepost">
+                    <h2 class="visually-hidden">Account</h2>
+                    <img src="images/PF4.jpg">
+                    <h3>Katy Az</h3>
+                </div>
+                <h2 class="visually-hidden">Post</h2>
+                <img id="post" src="images/Post4.jpg">
+                <article id="onderpost">
+                    <div>
+                        <button id="Like" class="skrt"><svg width="32" height="32" viewBox="0 0 32 32"
+                                aria-hidden="false">
+                                <path
+                                    d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="downloadmore">
+                        <button>Download</button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </article>
+            </article>
+
+            <article class="grid-item" id="Posttemplate">
+                <div id="abovepost">
+                    <h2 class="visually-hidden">Account</h2>
+                    <img src="images/PF5.png">
+                    <h3>Tobias Rademacher</h3>
+                </div>
+                <h2 class="visually-hidden">Post</h2>
+                <img id="post" src="images/Tobias-post.jpg">
+                <article id="onderpost">
+                    <h2 class="visually-hidden">Options</h2>
+                    <div>
+                        <button id="Like" class="skrt"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path
+                                    d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="downloadmore">
+                        <button>Download</button>
+                        <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+                                <path d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"></path>
+                            </svg></button>
+                    </div>
+                </article>
+            </article>
+        </div>
+
+
     </section>
 
     <footer>
@@ -136,5 +355,6 @@
         <p>Make something awesome</p>
     </footer>
 </body>
+<script src="scripts/script.js"></script>
 
 </html>

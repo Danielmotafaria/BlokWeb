@@ -12,6 +12,17 @@ function VeranderTerug(){
    div.classList.toggle("anders");
 }
 
+
+//zodat de like werkt op elke button, niet alleen de eerste
+var buttonArray = document.querySelectorAll("#Like")
+buttonArray.forEach(button => {
+  button.addEventListener("click", Changeback);
+})//en dan de functie Changeback definiëren
+function Changeback(event) {
+  event.target.classList.toggle("skrt");
+}
+
+
  // dit is voor het masonry grid
 var grid = document.querySelector('.grid');
 var colc = new Colcade( grid, {
@@ -24,7 +35,8 @@ var colc = new Colcade( '.grid', {
   columns: '.grid-col',
   items: '.grid-item'
 });
-colc.append( items )
-colc.prepend( items )
-colc.destroy()
+
+colc.append( items );
+colc.prepend( items );
+colc.destroy();
 

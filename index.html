@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="nl">
-
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="jouw naam">
@@ -14,14 +14,14 @@
   <h1 class="visually-hidden"> Beautiful Free Images & Pictures | Unsplash</h1>
 
   <header>
-    <a title="Home — Unsplash" href="/">
+    <a title="Home — Unsplash" href="#">
       <svg viewBox="0 0 32 32" aria-labelledby="unsplash-home" aria-hidden="false">
         <title>Unsplash Home</title>
         <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"> </path>
       </svg>
     </a>
 
-    <button role="search" id="zoekbalk" action="#">
+    <form role="search" id="zoekbalk" action="#">
       <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
         <path
           d="M31 28.64l-7.57-7.57a12.53 12.53 0 1 0-2.36 2.36l7.57 7.57zm-17.5-6a9.17 9.17 0 1 1 6.5-2.64 9.11 9.11 0 0 1-6.5 2.67z">
@@ -30,49 +30,44 @@
       <input id="searchSmallscreen" placeholder="Search photos" autocomplete="off">
       <input id="searchBigscreen" placeholder="Search free high-resolution photos" autocomplete="off"
         aria-label="zoeken">
-    </button>
+    </form>
 
     <ul>
-      <li>Home</li>
-      <li>Brands&nbsp;<span>New</span></li>
-      <li><svg width="18" height="18" viewBox="0 0 32 32" aria-hidden="false">
-          <path
-            d="M7 15.5c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5zm21.5-3.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5zm-12.5 0c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z">
-          </path>
-        </svg></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Brands&nbsp;<span>New</span></a></li>
+      <li><a href="#"><svg width="18" height="18" viewBox="0 0 32 32" aria-hidden="false">
+                  <path
+                      d="M7 15.5c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5zm21.5-3.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5zm-12.5 0c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z">
+                  </path>
+              </svg></a></li>
     </ul>
 
     <button id="Submitphoto">Submit a photo</button>
 
-    <div id="Bell"><svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="false">
+    <a href="#" id="Bell"><svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="false">
         <path
           d="M18.9 30.6c-7.4 2.6-14.2 1.4-15.7-2.8-.5-1.5-.2-3.2.8-4.9.5-.8.5-2.1.2-3l-1.4-3.9c-.9-2.6-.7-5.2.3-7.5.7-1.7 2-3.1 3.5-4.1l-.4-1c-.4-1.1.2-2.2 1.3-2.6l1.9-.7c1.1-.4 2.2.2 2.6 1.3l.4 1c2-.2 4.1.3 5.9 1.4 1.9 1.2 3.5 3.1 4.3 5.4l1.4 3.9c.3.8 1.2 1.9 2 2.2 1.8.7 3 1.8 3.6 3.4 1.4 4.2-3.2 9.3-10.7 11.9zm7.3-10.8c-.6-1.7-5.2-2.8-11.3-.7-6.1 2.1-9 5.8-8.4 7.5.6 1.7 5.2 2.8 11.3.7 6.1-2.1 9-5.8 8.4-7.5zm-7.2.8l.1.8c0 1.9-1.1 3.6-2.7 4.4-.6.3-1.3.6-2.1.6h-.1c-1.6 0-2.9-.8-3.9-1.9-.1-.2-.1-.5.1-.6 1.1-.9 2.8-2 5.3-2.8 1-.3 2-.6 2.9-.8.1-.1.3.1.4.3z">
         </path>
       </svg>
-    </div>
+    </a>
 
     <button id="Profile">
-      <img src="images/Avatar-profile.jpg">
+      <img src="images/Mypf.jpg">
     </button>
-
+    
     <svg id="hamburger" width="24" height="24" viewBox="0 0 32 32" aria-hidden="false">
       <path d="M4 21.3h24V24H4v-2.7zM4 8v2.7h24V8H4zm0 9.3h24v-2.7H4v2.7z"></path>
     </svg>
   </header>
 
-  <div id="uitklapmenu" class="anders">
-    <ul>
-      <li>Notifications</li>
+    <ul id="uitklapmenu" class="anders">
+      <li><a href="#">Notifications</a></li>
       <li><a href="Tweedepagina.html">View profile</a></li>
-      <li>Stats</li>
-      <li>Account settings</li>
+      <li><a href="#">Stats</a></li>
+      <li><a href="#">Account settings</a></li>
       <li> <button>Submit a photo</button></li>
+      <li><a href="#">Logout @danielmotafaria</a></li>
     </ul>
-    <hr>
-    <ul>
-      <li>Logout @danielmotafaria</li>
-    </ul>
-  </div>
 
   <section id="themas">
     <h2 class="visually-hidden">Categorieën/themas</h2>
@@ -151,14 +146,16 @@
         <img id="post" src="images/XPS-post.jpg">
         <article id="onderpost">
           <div>
-            <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+            <button id="Like"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
                 <path
                   d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
                 </path>
-              </svg></button>
+              </svg>
+            </button>
             <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
                 <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
-              </svg></button>
+              </svg>
+            </button>
           </div>
           <div id="downloadmore">
             <button>Download</button>
@@ -180,7 +177,7 @@
         <article id="onderpost">
           <h2 class="visually-hidden">Options</h2>
           <div>
-            <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+            <button id="Like"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
                 <path
                   d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
                 </path>
@@ -210,14 +207,16 @@
         <article id="onderpost">
           <h2 class="visually-hidden">Options</h2>
           <div>
-            <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+            <button id="Like"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
                 <path
                   d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
                 </path>
-              </svg></button>
+              </svg>
+            </button>
             <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
                 <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
-              </svg></button>
+              </svg>
+            </button>
           </div>
           <div id="downloadmore">
             <button>Download</button>
@@ -241,7 +240,7 @@
         <img id="post" src="images/post3.jpg">
         <article id="onderpost">
           <div>
-            <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+            <button id="Like"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
                 <path
                   d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
                 </path>
@@ -270,7 +269,7 @@
         <img id="post" src="images/Post4.jpg">
         <article id="onderpost">
           <div>
-            <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+            <button id="Like"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
                 <path
                   d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
                 </path>
@@ -300,7 +299,7 @@
         <article id="onderpost">
           <h2 class="visually-hidden">Options</h2>
           <div>
-            <button><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
+            <button id="Like"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="false">
                 <path
                   d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z">
                 </path>
